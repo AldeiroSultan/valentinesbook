@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Album Book</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Caveat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/akzhy/Vara@master/src/vara.min.js"></script>
+</head>
+<body>
+    <div class="v-center"></div>
+    <div id="container">
+        <div id="book" class="book">
+            <!-- Cover Page -->
+            <div id="coverPage" class="paper cover" data-page="0">
+                <div class="page front contents">
+                    <div class="intro">
+                        <h2>DIARY</h2>
+                        <h1>2019</h1>
+                        <div class="cover-image">
+                            <img src="/api/placeholder/400/320" alt="Cover Photo" />
+                        </div>
+                    </div>
+                </div>
+                <div class="page back"></div>
+            </div>
+            
+            <!-- First Page -->
+            <div id="page1" class="paper" data-page="1">
+                <div class="page front contents">
+                    <div class="page-content">
+                        <div class="entry-text">
+                            <div id="vara-container1"></div>
+                        </div>
+                        <div class="polaroid-container">
+                            <div class="polaroid" style="transform: rotate(-3deg)">
+                                <img src="/api/placeholder/200/200" alt="Photo 1" />
+                                <p class="caption">First memory</p>
+                            </div>
+                            <div class="polaroid" style="transform: rotate(3deg)">
+                                <img src="/api/placeholder/200/200" alt="Photo 2" />
+                                <p class="caption">Special moment</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="page back"></div>
+            </div>
+            
+            <!-- Second Page -->
+            <div id="page2" class="paper" data-page="2">
+                <div class="page front contents">
+                    <div class="page-content">
+                        <div class="entry-text">
+                            <div id="vara-container2"></div>
+                        </div>
+                        <div class="polaroid-container">
+                            <div class="polaroid" style="transform: rotate(-2deg)">
+                                <img src="/api/placeholder/200/200" alt="Photo 3" />
+                                <p class="caption">Beach day</p>
+                            </div>
+                            <div class="polaroid" style="transform: rotate(2deg)">
+                                <img src="/api/placeholder/200/200" alt="Photo 4" />
+                                <p class="caption">Perfect sunset</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="page back"></div>
+            </div>
+            
+            <!-- Page 3 -->
+            <div id="page3" class="paper" data-page="3">
+                <div class="page front contents">
+                    <div class="page-content">
+                        <div class="entry-text">
+                            <div id="vara-container3"></div>
+                        </div>
+                        <div class="polaroid-container">
+                            <div class="polaroid" style="transform: rotate(-2deg)">
+                                <img src="/api/placeholder/200/200" alt="Photo 5" />
+                                <p class="caption">Coffee break</p>
+                            </div>
+                            <div class="polaroid" style="transform: rotate(2deg)">
+                                <img src="/api/placeholder/200/200" alt="Photo 6" />
+                                <p class="caption">Morning walk</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="page back"></div>
+            </div>
+
+            <!-- Page 4 -->
+            <div id="page4" class="paper" data-page="4">
+                <div class="page front contents">
+                    <div class="page-content">
+                        <div class="entry-text">
+                            <div id="vara-container4"></div>
+                        </div>
+                        <div class="polaroid-container">
+                            <div class="polaroid" style="transform: rotate(-3deg)">
+                                <img src="/api/placeholder/200/200" alt="Photo 7" />
+                                <p class="caption">City lights</p>
+                            </div>
+                            <div class="polaroid" style="transform: rotate(3deg)">
+                                <img src="/api/placeholder/200/200" alt="Photo 8" />
+                                <p class="caption">Night out</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="page back"></div>
+            </div>
+
+            <!-- Page 5 -->
+            <div id="page5" class="paper" data-page="5">
+                <div class="page front contents">
+                    <div class="page-content">
+                        <div class="entry-text">
+                            <div id="vara-container5"></div>
+                        </div>
+                        <div class="polaroid-container">
+                            <div class="polaroid" style="transform: rotate(-2deg)">
+                                <img src="/api/placeholder/200/200" alt="Photo 9" />
+                                <p class="caption">Garden party</p>
+                            </div>
+                            <div class="polaroid" style="transform: rotate(2deg)">
+                                <img src="/api/placeholder/200/200" alt="Photo 10" />
+                                <p class="caption">Summer vibes</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="page back"></div>
+            </div>
+
+            <!-- Page 6 -->
+            <div id="page6" class="paper" data-page="6">
+                <div class="page front contents">
+                    <div class="page-content">
+                        <div class="entry-text">
+                            <div id="vara-container6"></div>
+                        </div>
+                        <div class="polaroid-container">
+                            <div class="polaroid" style="transform: rotate(-2deg)">
+                                <img src="/api/placeholder/200/200" alt="Photo 11" />
+                                <p class="caption">Autumn colors</p>
+                            </div>
+                            <div class="polaroid" style="transform: rotate(2deg)">
+                                <img src="/api/placeholder/200/200" alt="Photo 12" />
+                                <p class="caption">Nature walk</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="page back"></div>
+            </div>
+
+            <!-- Page 7 -->
+            <div id="page7" class="paper" data-page="7">
+                <div class="page front contents">
+                    <div class="page-content">
+                        <div class="entry-text">
+                            <div id="vara-container7"></div>
+                        </div>
+                        <div class="polaroid-container">
+                            <div class="polaroid" style="transform: rotate(-3deg)">
+                                <img src="/api/placeholder/200/200" alt="Photo 13" />
+                                <p class="caption">Weekend fun</p>
+                            </div>
+                            <div class="polaroid" style="transform: rotate(3deg)">
+                                <img src="/api/placeholder/200/200" alt="Photo 14" />
+                                <p class="caption">Happy moments</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="page back"></div>
+            </div>
+
+            <!-- Page 8 -->
+            <div id="page8" class="paper" data-page="8">
+                <div class="page front contents">
+                    <div class="page-content">
+                        <div class="entry-text">
+                            <div id="vara-container8"></div>
+                        </div>
+                        <div class="polaroid-container">
+                            <div class="polaroid" style="transform: rotate(-2deg)">
+                                <img src="/api/placeholder/200/200" alt="Photo 15" />
+                                <p class="caption">Final thoughts</p>
+                            </div>
+                            <div class="polaroid" style="transform: rotate(2deg)">
+                                <img src="/api/placeholder/200/200" alt="Photo 16" />
+                                <p class="caption">Last page</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="page back"></div>
+            </div>
+
+            <!-- Valentine's Page -->
+            <div id="page9" class="paper" data-page="9">
+                <div class="page last front contents">
+                    <div class="page-content valentine-page">
+                        <div class="entry-text">
+                            <div id="vara-container9"></div>
+                        </div>
+                        <div class="valentine-buttons">
+                            <button class="polaroid-button yes-button">
+                                <div class="button-content">Yes ❤️</div>
+                            </button>
+                            <button class="polaroid-button no-button">
+                                <div class="button-content">No 💔</div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="page back"></div>
+            </div>
+
+            <div class="side"></div>
+            <div class="bottom"></div>
+            <div class="shadow"></div>
+        </div>
+    </div>
+
+    <!-- Image Modal -->
+    <div id="imageModal" class="modal">
+        <div class="modal-content">
+            <img id="modalImage" src="" alt="Enlarged photo">
+            <div class="modal-caption"></div>
+        </div>
+    </div>
+
+    <a id="link" href="https://github.com/akzhy/Vara" target="_blank">VIEW ON GITHUB</a>
+    <script src="script.js"></script>
+</body>
+</html>

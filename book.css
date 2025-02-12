@@ -1,0 +1,418 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #e0f0e3;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    overflow: hidden;
+    font-size: 16px;
+}
+
+#container {
+    width: 60%;
+    margin: 20px auto;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.v-center {
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+    width: 0;
+}
+
+/* Book Structure */
+.book {
+    transform-style: preserve-3d;
+    transform: rotateX(45deg) rotateY(0deg) rotateZ(-45deg);
+    transition: transform 1s;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 10%;
+    margin: auto;
+    width: 30em;
+    height: 40em;
+}
+
+.book.open {
+    transform: rotateX(35deg) rotateY(0deg) rotateZ(-35deg);
+}
+
+.book .paper {
+    width: 25em;
+    height: 40em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: transform 1s, z-index 0.5s ease-in-out;
+    transform-origin: left center;
+    transform-style: preserve-3d;
+}
+
+.book .paper.open {
+    transform: rotateY(-180deg);
+}
+
+.book .paper .page {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    overflow: hidden;
+}
+
+.book .paper .front {
+    z-index: 2;
+    cursor: pointer;
+}
+
+.book .paper .back {
+    transform: rotateY(180deg);
+    background-color: #d4d4d4;
+    cursor: pointer;
+}
+
+/* Cover page specific styles */
+.book .cover .page.front {
+    background: #F4C2C2;
+}
+
+.book .cover .page.front:after {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(160, 115, 115, 0.1);
+}
+
+.book .cover .page.back {
+    background: #FF91A4;
+}
+
+.book .intro {
+    position: absolute;
+    width: calc(100% - 3em);
+    height: calc(100% - 3em);
+    border: 2em solid #eee;
+    margin: auto;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.book .intro h2 {
+    padding: 0.5em;
+    font-size: 2em;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 5px;
+    margin: 0;
+}
+
+.book .intro h1 {
+    padding: 0.2em 0.25em;
+    font-size: 4em;
+    color: #fff;
+    margin: 0;
+}
+
+/* Cover Image */
+.cover-image {
+    margin-top: 2em;
+    width: 80%;
+    height: 50%;
+    overflow: hidden;
+    border: 5px solid #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.cover-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Inner pages */
+.book .paper:not(.cover) .page.front {
+    background: #f1f1f1;
+    background-image: 
+        linear-gradient(90deg, transparent 40px, #abced4 40px, #abced4 42px, transparent 42px),
+        linear-gradient(#e1e1e1 0.1em, transparent 0.1em);
+    background-size: 100% 1.5em;
+}
+
+.page-content {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.entry-text {
+    padding: 40px 60px 20px 60px;
+    min-height: 120px;
+}
+
+/* Polaroid Container and Styles */
+.polaroid-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 20px 60px;
+    gap: 20px;
+}
+
+.polaroid {
+    background: white;
+    padding: 10px 10px 20px 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 160px;
+    transform-origin: center center;
+    transition: all 0.3s ease;
+    position: relative;
+    cursor: pointer;
+}
+
+.polaroid img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    display: block;
+}
+
+.polaroid .caption {
+    font-family: 'Caveat', cursive;
+    text-align: center;
+    margin: 10px 0 0 0;
+    font-size: 1.2em;
+    color: #333;
+}
+
+/* Valentine's Page Styles */
+.valentine-page {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.valentine-container {
+    position: relative;
+    width: 100%;
+    height: calc(100% - 120px);
+    display: flex;
+    flex-direction: column;
+}
+
+.valentine-buttons {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    margin-top: 60px;
+}
+
+.polaroid-button {
+    padding: 20px 40px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    font-family: 'Caveat', cursive;
+    font-size: 2em;
+    outline: none;
+    transition: all 0.3s ease;
+    background: white;
+}
+
+.yes-button {
+    transform: rotate(-3deg);
+    background-color: #ffebee;
+}
+
+.no-button {
+    transform: rotate(3deg);
+    background-color: #fafafa;
+    position: relative;
+    z-index: 9999;
+}
+
+/* Button Animations */
+@keyframes jumpAndSpin {
+    0% { transform: scale(1) rotate(0deg); }
+    50% { transform: scale(1.2) rotate(180deg); }
+    100% { transform: scale(1) rotate(360deg); }
+}
+
+.yes-button:hover, .no-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.yes-button.selected {
+    animation: jumpAndSpin 1s ease forwards;
+    background-color: #ffcdd2;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 10000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(5px);
+}
+
+.modal.show {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 0.3s ease-out;
+}
+
+.modal-content {
+    position: relative;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    max-width: 90%;
+    max-height: 90vh;
+    transform: scale(0.8);
+    transition: transform 0.3s ease-out;
+}
+
+.modal.show .modal-content {
+    transform: scale(1);
+}
+
+.modal-content img {
+    max-width: 100%;
+    max-height: 70vh;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+}
+
+.modal-caption {
+    text-align: center;
+    margin-top: 15px;
+    font-family: 'Caveat', cursive;
+    font-size: 1.5em;
+    color: #333;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Book Structure Elements */
+.book .side {
+    width: 3em;
+    height: 40em;
+    background: #b36060;
+    position: absolute;
+    left: -3em;
+    top: 0;
+    transform-origin: right;
+    transform: rotateY(-90deg);
+}
+
+.book .bottom {
+    width: 25em;
+    height: 3em;
+    background: #e2e2e2;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform-origin: bottom;
+    transform: rotateX(90deg);
+}
+
+.book .shadow {
+    width: 25em;
+    height: 40em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: transparent;
+    transform: translateZ(-3em);
+    box-shadow: -1em 1em 0px 0px #ccc3a9;
+    z-index: 0;
+}
+
+/* Z-index Handling */
+.book .paper[data-page="0"] { z-index: 10; }
+.book .paper[data-page="1"] { z-index: 9; }
+.book .paper[data-page="2"] { z-index: 8; }
+.book .paper[data-page="3"] { z-index: 7; }
+.book .paper[data-page="4"] { z-index: 6; }
+.book .paper[data-page="5"] { z-index: 5; }
+.book .paper[data-page="6"] { z-index: 4; }
+.book .paper[data-page="7"] { z-index: 3; }
+.book .paper[data-page="8"] { z-index: 2; }
+.book .paper[data-page="9"] { z-index: 1; }
+
+.book .paper.open[data-page="0"] { z-index: 1; }
+.book .paper.open[data-page="1"] { z-index: 2; }
+.book .paper.open[data-page="2"] { z-index: 3; }
+.book .paper.open[data-page="3"] { z-index: 4; }
+.book .paper.open[data-page="4"] { z-index: 5; }
+.book .paper.open[data-page="5"] { z-index: 6; }
+.book .paper.open[data-page="6"] { z-index: 7; }
+.book .paper.open[data-page="7"] { z-index: 8; }
+.book .paper.open[data-page="8"] { z-index: 9; }
+.book .paper.open[data-page="9"] { z-index: 10; }
+
+/* Link Styles */
+#link {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    color: #615858;
+    letter-spacing: 2px;
+    text-decoration: none;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 700px) {
+    #container {
+        width: 90%;
+    }
+    
+    .book {
+        width: 20em;
+        height: 30em;
+    }
+
+    .polaroid {
+        width: 120px;
+    }
+
+    .polaroid img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .modal-content {
+        padding: 10px;
+    }
+}
