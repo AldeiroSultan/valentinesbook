@@ -15,40 +15,40 @@ document.addEventListener('DOMContentLoaded', function() {
     // Define page contents
     const pageContents = [
         {
-            text: "15 Jan 2019",
-            paragraph: "Start the year with something cool. Looking forward to new adventures."
+            text: "5 May 2024",
+            paragraph: "The first time I saw you again, after dozens of mons, It was a Sunday, beneath a sy of soft, gray tunes."
         },
         {
-            text: "16 Jan 2019",
-            paragraph: "Every day brings something new. Capturing moments as they come."
+            text: "11 May 2024",
+            paragraph: "Bandung called for family, yet fate had its design, There you were, across the table, sharing laughter and cake so fine."
         },
         {
-            text: "17 Jan 2019",
-            paragraph: "Making memories one day at a time. Life is beautiful."
+            text: "20 May 2024",
+            paragraph: "My summer, though fleeting, was painted in your hue, Moments spent admiring you, unsure what to do"
         },
         {
-            text: "18 Jan 2019",
-            paragraph: "Simple moments become precious memories. Cherishing each day."
+            text: "24 May 2024",
+            paragraph: "Then came that Friday, after the gym's embrace, I gathered my courage, my heart set the pace"
         },
         {
-            text: "19 Jan 2019",
-            paragraph: "Finding beauty in everyday moments. Time flies so fast."
+            text: "2 Jun 2024",
+            paragraph: "For deep in my soul, it was always you, A love confessed in a way both funny and true"
         },
         {
-            text: "20 Jan 2019",
-            paragraph: "Living life to the fullest. Each moment counts."
+            text: "1 Jul 2024",
+            paragraph: "As matcha dates passed, our bond grew strong, But so did the hourglass, counting time gone"
         },
         {
-            text: "21 Jan 2019",
-            paragraph: "Creating memories that last forever. Grateful for everything."
+            text: "7 Sep 2024",
+            paragraph: "Now oceans apart, I see you only on a screen, A love story of teens, with fights and dreams in between"
         },
         {
-            text: "22 Jan 2019",
-            paragraph: "Final thoughts of this journey. What a wonderful time."
+            text: "1 Jan 2025",
+            paragraph: "Yet meeting you again was worth every mile, For my love for you remains certain, without trial."
         },
         {
-            text: "A Special Question",
-            paragraph: "Will you be my Valentine?"
+            text: "And so, as the starts in the sky align",
+            paragraph: "I ask you simply, Will you be my Valentine?"
         }
     ];
 
@@ -172,7 +172,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 hasAnswered = true;
                 
                 setTimeout(() => {
-                    window.location.href = 'https://www.google.com';
+                    window.location.href = 'https://paintingforziza.onrender.com/';
                 }, 1000);
             }
         }
