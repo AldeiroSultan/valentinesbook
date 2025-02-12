@@ -15,40 +15,40 @@ document.addEventListener('DOMContentLoaded', function() {
     // Define page contents
     const pageContents = [
             {
-                text: "5 may 2024",
+                text: "5 May 2024",
                 paragraph: "The first time i saw you again, after dozen of moons, It was a Sunday, beneath a sky of soft, gray tunes."
             },
             {
-                text: "11 may 2024",
+                text: "11 May 2024",
                 paragraph: "Bandung called for family, yet fate had its design, There you were, across the table, sharing laughter and cake so fine."
             },
             {
-                text: "20 may 2024",
+                text: "20 May 2024",
                 paragraph: "My summer, though fleeting, was painted in your hue, Moments spent admiring you, unsure what to do"
             },
             {
-                text: "24 may 2024",
+                text: "24 May 2024",
                 paragraph: "Then came that friday, after the gym's embrace, I gathered my courage, my heart set the pace"
             },
             {
-                text: "2 jun 2024",
+                text: "2 Jun 2024",
                 paragraph: "For deep in my soul, it was always you, A love confessed in a way both funny and true"
             },
             {
-                text: "1 jul 2024",
+                text: "1 Jul 2024",
                 paragraph: "As matcha dates passed, our bond grew strong, But so did the hourglass, counting time gone"
             },
             {
-                text: "7 sep 2024",
-                paragraph: "Now oceans apart, i see you only on a screen, A love story of teens, with fights and dreams in between"
+                text: "7 Sep 2024",
+                paragraph: "Now oceans apart, I see you only on a screen, A love story of teens, with fights and dreams in between"
             },
             {
-                text: "1 jan 2025",
+                text: "1 Jan 2025",
                 paragraph: "Yet meeting you again was worth every mile, For my love for you remains certain, without trial."
             },
             {
-                text: "And so, as the stars in the sky align",
-                paragraph: "A ask you simply, will you be my Valentine?"
+                text: "So, as the stars in the sky align",
+                paragraph: "I ask you simply, will you be my Valentine?"
             }
         ];
 
