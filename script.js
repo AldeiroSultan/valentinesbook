@@ -14,43 +14,43 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Define page contents
     const pageContents = [
-        {
-            text: "5 May 2024",
-            paragraph: "THE FIRST TIME I SAW YOU AGAIN, AFTER DOZEN OF MOONS, IT WAS A SUNDAY BENEATH, BENEATH A SKY OF SOFT, GRAY TUNES."
-        },
-        {
-            text: "11 May 2024",
-            paragraph: "BANDUNG CALLED FOR FAMILY, YET FATE HAD ITS DESIGN, THERE YOU WERE, ACROSS THE TABLE, SHARING LAUGHTER AND CAKE SO FINE."
-        },
-        {
-            text: "20 May 2024",
-            paragraph: "MY SUMMER, THOUGH FLEETING, WAS PAINTED IN YOUR HUE, MOMENTS SPENT ADMIRING YOU, UNSURE WHAT TO DO"
-        },
-        {
-            text: "24 May 2024",
-            paragraph: "THEN CAME THAT FRIDAY, AFTER THE GYM'S EMBRACE, I GATHERED MY COURAGE, MY HEART SET THE PACE"
-        },
-        {
-            text: "2 Jun 2024",
-            paragraph: "FOR DEEP IN MY SOUL, IT WAS ALWAYS YOU, A LOVE CONFESSED IN A WAY BOTH FUNNY AND TRUE"
-        },
-        {
-            text: "1 Jul 2024",
-            paragraph: "AS MATCHA DATES PASSED, OUR BOND GREW STRONG, BUT SO DID THE HOURGLASS, COUNTING TIME GONE"
-        },
-        {
-            text: "7 Sep 2024",
-            paragraph: "NOW OCEANS APART, I SEE YOU ONLY ON A SCREEN, A LOVE STORY OF TEENS, WITH FIGHTS AND DREAMS IN BETWEEN"
-        },
-        {
-            text: "1 Jan 2025",
-            paragraph: "YET MEETING YOU AGAIN WAS WORTH EVERY MILE, FOR MY LOVE FOR YOU REMAINS CERTAIN, WITHOUT TRIAL."
-        },
-        {
-            text: "AND SO, AS THE STARS IN THE SKY ALIGN",
-            paragraph: "I ASK YOU SIMPLY, WILL YOU BE MY VALENTINE?"
-        }
-    ];
+            {
+                text: "5 may 2024",
+                paragraph: "The first time i saw you again, after dozen of moons, It was a Sunday, beneath a sky of soft, gray tunes."
+            },
+            {
+                text: "11 may 2024",
+                paragraph: "Bandung called for family, yet fate had its design, There you were, across the table, sharing laughter and cake so fine."
+            },
+            {
+                text: "20 may 2024",
+                paragraph: "My summer, though fleeting, was painted in your hue, Moments spent admiring you, unsure what to do"
+            },
+            {
+                text: "24 may 2024",
+                paragraph: "Then came that friday, after the gym's embrace, I gathered my courage, my heart set the pace"
+            },
+            {
+                text: "2 jun 2024",
+                paragraph: "For deep in my soul, it was always you, A love confessed in a way both funny and true"
+            },
+            {
+                text: "1 jul 2024",
+                paragraph: "As matcha dates passed, our bond grew strong, But so did the hourglass, counting time gone"
+            },
+            {
+                text: "7 sep 2024",
+                paragraph: "Now oceans apart, i see you only on a screen, A love story of teens, with fights and dreams in between"
+            },
+            {
+                text: "1 jan 2025",
+                paragraph: "Yet meeting you again was worth every mile, For my love for you remains certain, without trial."
+            },
+            {
+                text: "And so, as the stars in the sky align",
+                paragraph: "A ask you simply, will you be my Valentine?"
+            }
+        ];
 
     // Create Vara instances for each page
     for (let i = 0; i < 9; i++) {
@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     x: -30,
                     delay: 0,
                     duration: 1000,
-                    fontSize: fontSize.small
+                    fontSize: fontSize.small + 4  // Increased font size for better readability
                 },
                 {
                     text: pageContents[i].paragraph,
@@ -73,13 +73,14 @@ document.addEventListener('DOMContentLoaded', function() {
                     x: posX,
                     delay: 800,
                     duration: 1500,
-                    fontSize: fontSize.small
+                    fontSize: fontSize.small + 2  // Increased font size for better readability
                 }
             ],
             {
                 strokeWidth: 2,
                 fontSize: fontSize.medium,
-                autoAnimation: false
+                autoAnimation: false,
+                textAlign: "left"  // Added for better alignment
             }
         );
     }
