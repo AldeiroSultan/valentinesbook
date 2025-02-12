@@ -16,39 +16,39 @@ document.addEventListener('DOMContentLoaded', function() {
     const pageContents = [
         {
             text: "5 May 2024",
-            paragraph: "The first time I saw you again, after dozens of mons, It was a Sunday, beneath a sy of soft, gray tunes."
+            paragraph: "THE FIRST TIME I SAW YOU AGAIN, AFTER DOZEN OF MOONS, IT WAS A SUNDAY BENEATH, BENEATH A SKY OF SOFT, GRAY TUNES."
         },
         {
             text: "11 May 2024",
-            paragraph: "Bandung called for family, yet fate had its design, There you were, across the table, sharing laughter and cake so fine."
+            paragraph: "BANDUNG CALLED FOR FAMILY, YET FATE HAD ITS DESIGN, THERE YOU WERE, ACROSS THE TABLE, SHARING LAUGHTER AND CAKE SO FINE."
         },
         {
             text: "20 May 2024",
-            paragraph: "My summer, though fleeting, was painted in your hue, Moments spent admiring you, unsure what to do"
+            paragraph: "MY SUMMER, THOUGH FLEETING, WAS PAINTED IN YOUR HUE, MOMENTS SPENT ADMIRING YOU, UNSURE WHAT TO DO"
         },
         {
             text: "24 May 2024",
-            paragraph: "Then came that Friday, after the gym's embrace, I gathered my courage, my heart set the pace"
+            paragraph: "THEN CAME THAT FRIDAY, AFTER THE GYM'S EMBRACE, I GATHERED MY COURAGE, MY HEART SET THE PACE"
         },
         {
             text: "2 Jun 2024",
-            paragraph: "For deep in my soul, it was always you, A love confessed in a way both funny and true"
+            paragraph: "FOR DEEP IN MY SOUL, IT WAS ALWAYS YOU, A LOVE CONFESSED IN A WAY BOTH FUNNY AND TRUE"
         },
         {
             text: "1 Jul 2024",
-            paragraph: "As matcha dates passed, our bond grew strong, But so did the hourglass, counting time gone"
+            paragraph: "AS MATCHA DATES PASSED, OUR BOND GREW STRONG, BUT SO DID THE HOURGLASS, COUNTING TIME GONE"
         },
         {
             text: "7 Sep 2024",
-            paragraph: "Now oceans apart, I see you only on a screen, A love story of teens, with fights and dreams in between"
+            paragraph: "NOW OCEANS APART, I SEE YOU ONLY ON A SCREEN, A LOVE STORY OF TEENS, WITH FIGHTS AND DREAMS IN BETWEEN"
         },
         {
             text: "1 Jan 2025",
-            paragraph: "Yet meeting you again was worth every mile, For my love for you remains certain, without trial."
+            paragraph: "YET MEETING YOU AGAIN WAS WORTH EVERY MILE, FOR MY LOVE FOR YOU REMAINS CERTAIN, WITHOUT TRIAL."
         },
         {
-            text: "And so, as the starts in the sky align",
-            paragraph: "I ask you simply, Will you be my Valentine?"
+            text: "AND SO, AS THE STARS IN THE SKY ALIGN",
+            paragraph: "I ASK YOU SIMPLY, WILL YOU BE MY VALENTINE?"
         }
     ];
 
